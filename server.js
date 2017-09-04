@@ -45,6 +45,12 @@ app.get('/',(req,res)=>{
 		heading: 'ichigo'
 	});
 });
+app.get('/projects',(req,res)=>{
+	res.render('projects.hbs',{
+		pageTitle:'Projects',
+		heading:'kenpachi'
+	});
+});
 
 app.get('/about',(req,res)=>{
 	res.render('about.hbs',{
